@@ -30,7 +30,7 @@ jobs:
         run: mvn jacoco:report
 
       - name: Arquivar relatorios de cobertura
-        uses: actions/upload-artfact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: coverage-report
           path: target/site/jacoco
